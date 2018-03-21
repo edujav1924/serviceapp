@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.edu.serviceapp.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/longitudeTextGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationControllerGPS"
+            android:text="longitude"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/longitudeValueGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationControllerGPS"
+            android:layout_toRightOf="@id/longitudeTextGPS"
+            android:paddingLeft="20px"
+            android:text="0.0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/latitudeTextGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/longitudeTextGPS"
+            android:text="latitude"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/latitudeValueGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/longitudeValueGPS"
+            android:layout_toRightOf="@id/longitudeTextGPS"
+            android:paddingLeft="20px"
+            android:text="0.0000"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/separator1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/latitudeValueGPS"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/material_blue_grey_800" />
+
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/latitudeValueNetwork"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/material_blue_grey_800" />
+
+        <View
+            android:id="@+id/separator3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/latitudeValueBest"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/material_blue_grey_800" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
